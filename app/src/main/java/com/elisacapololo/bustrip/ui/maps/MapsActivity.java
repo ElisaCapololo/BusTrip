@@ -1,8 +1,9 @@
-package com.elisacapololo.bustrip;
+package com.elisacapololo.bustrip.ui.maps;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+import com.elisacapololo.bustrip.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

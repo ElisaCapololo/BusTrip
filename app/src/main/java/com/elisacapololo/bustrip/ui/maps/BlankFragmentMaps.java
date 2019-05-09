@@ -1,4 +1,4 @@
-package com.elisacapololo.bustrip;
+package com.elisacapololo.bustrip.ui.maps;
 
 
 import android.content.Context;
@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.elisacapololo.bustrip.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

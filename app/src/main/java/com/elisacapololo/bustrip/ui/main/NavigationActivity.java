@@ -1,4 +1,4 @@
-package com.elisacapololo.bustrip;
+package com.elisacapololo.bustrip.ui.main;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -7,8 +7,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
-import android.widget.Toolbar;
+
+import com.elisacapololo.bustrip.ui.maps.BlankFragmentMaps;
+import com.elisacapololo.bustrip.R;
+import com.elisacapololo.bustrip.ui.trips.TripsFragment;
 
 public class NavigationActivity extends AppCompatActivity {
 

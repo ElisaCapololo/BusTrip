@@ -1,4 +1,4 @@
-package com.elisacapololo.bustrip;
+package com.elisacapololo.bustrip.ui.trips;
 
 public class Trips {
 
