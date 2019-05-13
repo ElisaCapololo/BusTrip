@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.elisacapololo.bustrip.ui.maps.BlankFragmentMaps;
 import com.elisacapololo.bustrip.R;
@@ -28,6 +29,8 @@ public class NavigationActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_trips:
                    transaction.replace(R.id.frame_content, new TripsFragment()).commit();
+                    return true;
+                case R.id.navigation_profile:
                     return true;
                 case R.id.navigation_menu:
                    // mTextMessage.setText(R.string.title_menu);

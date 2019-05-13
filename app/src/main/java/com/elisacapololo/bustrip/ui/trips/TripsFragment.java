@@ -58,11 +58,11 @@ public class TripsFragment extends Fragment {
         list.add(new Trips("Luanda", "Negage", "05:30", "12:00","3500"));
     }
 
-    @Override
+    /*@Override
     public void onAttach(Context context) {
         super.onAttach(context);
         Toast.makeText(context, "Mostrando Viagens", Toast.LENGTH_SHORT).show();
-    }
+    }*/
 
 
 }

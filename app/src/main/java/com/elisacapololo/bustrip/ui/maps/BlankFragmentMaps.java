@@ -49,11 +49,11 @@ public class BlankFragmentMaps extends Fragment implements OnMapReadyCallback {
         return view;
     }
 
-    @Override
+  /*  @Override
     public void onAttach(Context context) {
         super.onAttach(context);
             Toast.makeText(context, "Mostrando Mapa", Toast.LENGTH_SHORT).show();
-    }
+    }*/
 
 
 
