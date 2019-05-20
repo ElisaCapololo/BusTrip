@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.elisacapololo.bustrip.ui.maps.BlankFragmentMaps;
 import com.elisacapololo.bustrip.R;
+import com.elisacapololo.bustrip.ui.profile.ProfileFragment;
 import com.elisacapololo.bustrip.ui.trips.TripsFragment;
 
 public class NavigationActivity extends AppCompatActivity {
@@ -31,6 +32,7 @@ public class NavigationActivity extends AppCompatActivity {
                    transaction.replace(R.id.frame_content, new TripsFragment()).commit();
                     return true;
                 case R.id.navigation_profile:
+                    transaction.replace(R.id.frame_content, new ProfileFragment()).commit();
                     return true;
                 case R.id.navigation_menu:
                    // mTextMessage.setText(R.string.title_menu);
@@ -44,6 +46,7 @@ public class NavigationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
+        getSupportActionBar().setTitle("Macon");
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
