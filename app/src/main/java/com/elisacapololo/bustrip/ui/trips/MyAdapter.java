@@ -36,8 +36,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.TripsViewHolder> {
     public void onBindViewHolder(@NonNull TripsViewHolder tripsViewHolder, int i) {
         tripsViewHolder.cityFrom.setText(tripsList.get(i).getCity_form());
         tripsViewHolder.cityDestination.setText(tripsList.get(i).getCity_destination());
-        tripsViewHolder.partida.setText(tripsList.get(i).getPartida());
-        tripsViewHolder.chegada.setText(tripsList.get(i).getChegada());
+        tripsViewHolder.partida.setText(tripsList.get(i).getHour_chegada());
+        tripsViewHolder.chegada.setText(tripsList.get(i).getHour_partida());
+        tripsViewHolder.date.setText(tripsList.get(i).getDate());
+        tripsViewHolder.month.setText(tripsList.get(i).getMonth());
         tripsViewHolder.preco.setText(tripsList.get(i).getPreco());
         tripsViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +60,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.TripsViewHolder> {
         TextView cityDestination;
         TextView partida;
         TextView chegada;
+        TextView date;
+        TextView month;
         TextView preco;
         CardView cardView;
         public TripsViewHolder(@NonNull View itemView) {
@@ -66,6 +70,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.TripsViewHolder> {
             cityDestination = itemView.findViewById(R.id.city_destination);
             partida = itemView.findViewById(R.id.hour_partida);
             chegada = itemView.findViewById(R.id.hour_chegada);
+            date = itemView.findViewById(R.id.date);
+            month = itemView.findViewById(R.id.month);
             preco = itemView.findViewById(R.id.money);
             cardView = itemView.findViewById(R.id.cardview_id);
         }

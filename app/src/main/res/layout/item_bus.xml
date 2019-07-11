@@ -2,8 +2,9 @@
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="100dp"
     android:id="@+id/cardview_id"
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
@@ -11,53 +12,66 @@
     cardview:cardCornerRadius="4dp"
     android:layout_marginBottom="5dp">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="80dp"
-        android:layout_height="88dp"
-        android:src="@drawable/ic_directions_bus_black_24dp" />
-
-    <LinearLayout
-        android:layout_width="304dp"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="5dp"
-        android:orientation="vertical">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:id="@+id/linearLayout"
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textAlignment="center"
+                android:textColor="#72CEF4"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dez"
+                android:textAlignment="center"
+                android:textColor="#707070"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="19dp"
+            android:layout_height="78dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.785"
+            cardview:srcCompat="@drawable/sep" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="160dp"
+            android:layout_height="94dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            tools:layout_editor_absoluteY="6dp">
 
             <TextView
                 android:id="@+id/city_from"
-                android:layout_width="109dp"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Luanda"
                 android:textColor="#000000"
                 android:textSize="18sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:src="@drawable/ic_swap_horiz_black_24dp" />
-
-            <TextView
-                android:id="@+id/city_destination"
-                android:layout_width="125dp"
-                android:layout_height="wrap_content"
-                android:text="Huambo"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/hour_partida"
@@ -69,41 +83,44 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/hour_chegada"
-                android:layout_width="64dp"
+                android:id="@+id/city_destination"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="65dp"
+                android:text="Huambo"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/hour_chegada"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="18:00"
                 android:textColor="#A9A9A9"
                 android:textSize="15sp" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="68dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="44dp"
+            android:text="24.000"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/money"
-                android:layout_width="58dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="180dp"
-                android:layout_marginTop="5dp"
-                android:text="2500"
-                android:textColor="#000000"
-                android:textSize="20sp" />
+        <TextView
+            android:layout_width="26dp"
+            android:layout_height="29dp"
+            android:text="kz"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/money"
+            app:layout_constraintTop_toTopOf="@+id/money" />
 
-            <TextView
-                android:layout_width="38dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="kz"
-                android:textColor="#000000"
-                android:textSize="20sp" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.v7.widget.CardView>

@@ -48,14 +48,15 @@ public class TripsFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         list = new ArrayList<>();
-        list.add(new Trips("Luanda", "Namibe", "08:00", "19:30","4000"));
-        list.add(new Trips("Cabo-Ledo", "Luanda", "05:30", "12:00","3500"));
-        list.add(new Trips("Luanda", "Huila", "00:30", "10:00","4500"));
-        list.add(new Trips("Luanda", "Benguela", "19:00", "06:00","5000"));
-        list.add(new Trips("Namibia", "Cunene", "05:30", "12:00","3600"));
-        list.add(new Trips("Luanda", "Cabo-Ledo", "05:0", "11:00","3500"));
-        list.add(new Trips("Caluquembe", "Menongue", "05:30", "12:00","3500"));
-        list.add(new Trips("Luanda", "Negage", "05:30", "12:00","3500"));
+        list.add(new Trips("Luanda", "Namibia", "08:00", "19:30","16","Maio","24000"));
+        list.add(new Trips("Luanda", "Namibe", "08:00", "19:30","01","Junho","4000"));
+        list.add(new Trips("Mbanza-Congo", "Luanda", "05:30", "12:00","30","Agosto","3500"));
+        list.add(new Trips("Luanda", "Huila", "00:30", "10:00","10","Março","4500"));
+        list.add(new Trips("Luanda", "Benguela", "19:00", "06:00","16","Dez","5000"));
+        list.add(new Trips("Namibia", "Cunene", "05:30", "12:00","16","Maio","3600"));
+        list.add(new Trips("Luanda", "Cabo-Ledo", "05:0", "11:00","9","Junho","3500"));
+        list.add(new Trips("Caluquembe", "Menongue", "05:30", "12:00","16","Maio","3500"));
+        list.add(new Trips("Luanda", "Negage", "05:30", "12:00","16","Julho","3500"));
     }
 
     /*@Override
