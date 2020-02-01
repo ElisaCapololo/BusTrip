@@ -7,19 +7,21 @@ public class Trips {
    private String hour_partida;
    private String hour_chegada;
    private  String date;
-   private String month;
+   //private String month;
    private String preco;
+   private String paragens;
 
     public Trips() {}
 
-    public Trips(String city_form, String city_destination, String hour_partida, String hour_chegada, String date, String month, String preco) {
+    public Trips(String city_form, String city_destination, String hour_partida, String hour_chegada, String date, String preco, String paragens) {
         this.city_form = city_form;
         this.city_destination = city_destination;
         this.hour_partida = hour_partida;
         this.hour_chegada = hour_chegada;
         this.date = date;
-        this.month = month;
+       // this.month = month;
         this.preco = preco;
+        this.paragens = paragens;
     }
 
     public String getCity_form() {
@@ -62,13 +64,13 @@ public class Trips {
         this.date = date;
     }
 
-    public String getMonth() {
+  /*  public String getMonth() {
         return month;
     }
 
     public void setMonth(String month) {
         this.month = month;
-    }
+    }*/
 
     public String getPreco() {
         return preco;
@@ -76,5 +78,13 @@ public class Trips {
 
     public void setPreco(String preco) {
         this.preco = preco;
+    }
+
+    public String getParagens() {
+        return paragens;
+    }
+
+    public void setParagens(String paragens) {
+        this.paragens = paragens;
     }
 }

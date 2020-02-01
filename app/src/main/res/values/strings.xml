@@ -7,7 +7,7 @@
     <string name="title_activity_navigation">NavigationActivity</string>
     <string name="title_home">Home</string>
     <string name="title_trips">Viagem</string>
-    <string name="title_menu">Menu</string>
-    <string name="title_profile">Perfil</string>
+    <string name="title_about">Sobre</string>
+    <string name="title_info">Informações</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

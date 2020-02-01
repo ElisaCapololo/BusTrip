@@ -1,126 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="100dp"
     android:id="@+id/cardview_id"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginBottom="5dp"
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
-    xmlns:cardview="http://schemas.android.com/apk/res-auto"
-    cardview:cardCornerRadius="4dp"
-    android:layout_marginBottom="5dp">
+    cardview:cardCornerRadius="4dp">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="84dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="15"
-                android:textAlignment="center"
-                android:textColor="#72CEF4"
-                android:textSize="50sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/month"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Dez"
-                android:textAlignment="center"
-                android:textColor="#707070"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="19dp"
-            android:layout_height="78dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-            app:layout_constraintStart_toEndOf="@+id/linearLayout"
-            app:layout_constraintTop_toTopOf="@+id/linearLayout"
-            app:layout_constraintVertical_bias="0.785"
-            cardview:srcCompat="@drawable/sep" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="160dp"
-            android:layout_height="94dp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="16dp"
-            android:orientation="vertical"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            tools:layout_editor_absoluteY="6dp">
-
-            <TextView
-                android:id="@+id/city_from"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Luanda"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/hour_partida"
-                android:layout_width="97dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="08:00"
-                android:textColor="#A9A9A9"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/city_destination"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Huambo"
-                android:textColor="#000000"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/hour_chegada"
-                android:layout_width="97dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="18:00"
-                android:textColor="#A9A9A9"
-                android:textSize="15sp" />
-
-        </LinearLayout>
 
         <TextView
-            android:id="@+id/money"
-            android:layout_width="68dp"
-            android:layout_height="25dp"
-            android:layout_marginTop="44dp"
-            android:text="24.000"
+            android:id="@+id/date"
+            android:layout_width="171dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="15/02/2020"
+            android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="20sp"
-            app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hour_chegada" />
+
+
+        <TextView
+            android:id="@+id/city_from"
+            android:layout_width="174dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Luanda"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:layout_width="26dp"
-            android:layout_height="29dp"
+            android:id="@+id/hour_partida"
+            android:layout_width="95dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="08:00"
+            android:textColor="#A9A9A9"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city_destination" />
+
+        <TextView
+            android:id="@+id/city_destination"
+            android:layout_width="188dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Huambo"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hour_chegada"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="18:00"
+            android:textColor="#A9A9A9"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/city_from" />
+
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="85dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="272dp"
+            android:layout_marginTop="92dp"
+            android:text="24.000"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
             android:text="kz"
             android:textColor="#000000"
             android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/money"
             app:layout_constraintTop_toTopOf="@+id/money" />
 
-    </android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="26dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/city_destination"
+            app:layout_constraintStart_toEndOf="@+id/city_from"
+            app:layout_constraintTop_toTopOf="parent"
+            cardview:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
 
-</android.support.v7.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

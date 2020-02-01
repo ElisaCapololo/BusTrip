@@ -15,7 +15,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.launch.SplashActivity"
+        <activity android:name=".ui.ticket.PaymentActivity"></activity>
+        <activity android:name=".ui.ticket.FormActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".ui.launch.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -42,8 +50,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ui.main.NavigationActivity"
-            android:label="@string/title_activity_navigation">
-        </activity>
+            android:label="@string/title_activity_navigation" />
         <activity android:name=".ui.trips.InformationTripsActivity" />
     </application>
 

@@ -1,16 +1,14 @@
 package com.elisacapololo.bustrip.ui.trips;
 
 
-import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.elisacapololo.bustrip.R;
 
@@ -48,15 +46,15 @@ public class TripsFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         list = new ArrayList<>();
-        list.add(new Trips("Luanda", "Namibia", "08:00", "19:30","16","Maio","24000"));
-        list.add(new Trips("Luanda", "Namibe", "08:00", "19:30","01","Junho","4000"));
-        list.add(new Trips("Mbanza-Congo", "Luanda", "05:30", "12:00","30","Agosto","3500"));
-        list.add(new Trips("Luanda", "Huila", "00:30", "10:00","10","Março","4500"));
-        list.add(new Trips("Luanda", "Benguela", "19:00", "06:00","16","Dez","5000"));
-        list.add(new Trips("Namibia", "Cunene", "05:30", "12:00","16","Maio","3600"));
-        list.add(new Trips("Luanda", "Cabo-Ledo", "05:0", "11:00","9","Junho","3500"));
-        list.add(new Trips("Caluquembe", "Menongue", "05:30", "12:00","16","Maio","3500"));
-        list.add(new Trips("Luanda", "Negage", "05:30", "12:00","16","Julho","3500"));
+        list.add(new Trips("Luanda", "Namibia", "08:00", "19:30","16/02/2020","24000","Luanda, Bengo"));
+        list.add(new Trips("Luanda", "Namibe", "08:00", "19:30","01/06/2010","4000","Luanda, Bengo"));
+        list.add(new Trips("Mbanza-Congo", "Luanda", "05:30", "12:00","30/08/2020","3500","Luanda, Bengo"));
+        list.add(new Trips("Luanda", "Huila", "00:30", "10:00","10/03/2020","4500","Luanda, Bengo"));
+        list.add(new Trips("Luanda", "Benguela", "19:00", "06:00","16/12/2020","5000","Luanda, Bengo"));
+        list.add(new Trips("Namibia", "Cunene", "05:30", "12:00","16/05/2020","3600","Luanda, Bengo"));
+        list.add(new Trips("Luanda", "Cabo-Ledo", "05:0", "11:00","9/04/2020","3500","Luanda, Bengo"));
+        list.add(new Trips("Caluquembe", "Menongue", "05:30", "12:00","16/05/2020","3500","Luanda, Bengo"));
+        list.add(new Trips("Luanda", "Negage", "05:30", "12:00","16/07/2020","3500","Luanda, Bengo"));
     }
 
     /*@Override

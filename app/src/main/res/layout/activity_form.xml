@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ticket.FormActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="339dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_round"
+        android:onClick="payment"
+        android:text="Pagar"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientNeighborhood" />
+
+    <EditText
+        android:id="@+id/clientName"
+        android:layout_width="352dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:background="@drawable/edit_round"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/clientBI"
+        android:layout_width="352dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Número do BI"
+        android:background="@drawable/edit_round"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/clientName"
+        app:layout_constraintStart_toStartOf="@+id/clientName"
+        app:layout_constraintTop_toBottomOf="@+id/clientName" />
+
+    <EditText
+        android:id="@+id/clientPhone"
+        android:layout_width="352dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Telefone"
+        android:background="@drawable/edit_round"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/clientBI"
+        app:layout_constraintStart_toStartOf="@+id/clientBI"
+        app:layout_constraintTop_toBottomOf="@+id/clientBI" />
+
+    <EditText
+        android:id="@+id/clientNeighborhood"
+        android:layout_width="350dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Bairro"
+        android:background="@drawable/edit_round"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/clientPhone"
+        app:layout_constraintStart_toStartOf="@+id/clientPhone"
+        app:layout_constraintTop_toBottomOf="@+id/clientPhone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

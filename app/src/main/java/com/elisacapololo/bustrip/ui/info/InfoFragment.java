@@ -1,8 +1,8 @@
-package com.elisacapololo.bustrip.ui.profile;
+package com.elisacapololo.bustrip.ui.info;
 
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,10 +12,10 @@ import com.elisacapololo.bustrip.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ProfileFragment extends Fragment {
+public class InfoFragment extends Fragment {
 
 
-    public ProfileFragment() {
+    public InfoFragment() {
         // Required empty public constructor
     }
 

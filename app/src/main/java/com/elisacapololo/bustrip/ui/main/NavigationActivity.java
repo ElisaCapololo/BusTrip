@@ -1,17 +1,18 @@
 package com.elisacapololo.bustrip.ui.main;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+
+import com.elisacapololo.bustrip.ui.about.AboutFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.elisacapololo.bustrip.ui.maps.BlankFragmentMaps;
 import com.elisacapololo.bustrip.R;
-import com.elisacapololo.bustrip.ui.profile.ProfileFragment;
+import com.elisacapololo.bustrip.ui.info.InfoFragment;
 import com.elisacapololo.bustrip.ui.trips.TripsFragment;
 
 public class NavigationActivity extends AppCompatActivity {
@@ -32,10 +33,10 @@ public class NavigationActivity extends AppCompatActivity {
                    transaction.replace(R.id.frame_content, new TripsFragment()).commit();
                     return true;
                 case R.id.navigation_profile:
-                    transaction.replace(R.id.frame_content, new ProfileFragment()).commit();
+                    transaction.replace(R.id.frame_content, new InfoFragment()).commit();
                     return true;
                 case R.id.navigation_menu:
-                   // mTextMessage.setText(R.string.title_menu);
+                    transaction.replace(R.id.frame_content, new AboutFragment()).commit();
                     return true;
             }
             return false;
